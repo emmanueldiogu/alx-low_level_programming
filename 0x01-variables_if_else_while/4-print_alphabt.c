@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main: Entry point
- *
+ * main - Entry point
+ * Description: Print alphabets a - z,
+ * excluding letters q and e
  * Return: 0
 */
 int main(void)
