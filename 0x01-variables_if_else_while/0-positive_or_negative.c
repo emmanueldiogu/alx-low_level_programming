@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
-* main -
+/**
+* main - Entry point
 *
 * Return: 0
 */
