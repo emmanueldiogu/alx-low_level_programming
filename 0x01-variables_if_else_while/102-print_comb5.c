@@ -19,7 +19,7 @@ while (z <= 9)
 a = 0;
 while (a <= 9)
 {
-if (!(x == y && z == y))
+if (!(x == a && z == y))
 {
 putchar('0' + x);
 putchar('0' + y);
