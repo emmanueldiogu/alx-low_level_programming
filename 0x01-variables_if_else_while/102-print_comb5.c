@@ -26,7 +26,7 @@ putchar('0' + y);
 putchar(' ');
 putchar('0' + z);
 putchar('0' + a);
-if (!((y + x) == 17 && (z + a) == 17 && z == 9))
+if (!((y + x) == 18 && (z + a) == 17 && z == 9))
 {
 putchar(',');
 putchar(' ');
