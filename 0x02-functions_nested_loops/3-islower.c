@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
+ * _islower - Entry point
+ * @c: parameter to be checked
+ *
  * Description: Return 1 if lowercase else return 0
- * _islower: Entry point
- * 'c': parameter to be checked
+ *
  * Return: 0
 */
 
