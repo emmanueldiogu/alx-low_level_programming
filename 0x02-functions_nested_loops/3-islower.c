@@ -4,6 +4,8 @@
  * _islower() - Entry point
  * c - parameter to be checked
  * Description: Return 1 if lowercase else return 0
+ * Description: _islower() - check for lower case
+ * Description: "c" - parameter to check
  * Return: 0
 */
 
