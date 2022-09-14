@@ -3,9 +3,9 @@
 /**
  * _isalpha - Entry point
  * @c: parameter to check
- * 
+ *
  * Description: function that checks for alphabetic character
- * 
+ *
  * Return: 1 if 'c' is a letter, lowercase or uppercase
 */
 
