@@ -20,4 +20,6 @@ sum += i;
 }
 i++;
 }
+printf("%i\n", sum);
+return (0);
 }
