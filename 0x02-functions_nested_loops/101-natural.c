@@ -9,7 +9,7 @@
  * Return: 0
 */
 
-void print_times_table(int n)
+int main(void)
 {
 int i = 0, sum = 0;
 while (i < 1024)
