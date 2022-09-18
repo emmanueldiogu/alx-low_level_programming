@@ -16,8 +16,7 @@ if (n < 0 || n > 15)
 return;
 while (i <= n)
 {
-j = 0;
-while (j <= n)
+for (j = 0; j <= n; j++)
 {
 mult = i * j;
 if (j == 0)
@@ -47,7 +46,6 @@ if (j < n)
 _putchar(',');
 _putchar(' ');
 }
-j++;
 }
 _putchar('\n');
 i++;
