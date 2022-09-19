@@ -5,7 +5,7 @@
  * @c: entry parameter
  *
  * Description: Function that checks for a digit
- * 
+ *
  * Return: 0
 */
 
