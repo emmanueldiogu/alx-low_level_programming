@@ -10,17 +10,13 @@
 
 int _isupper(int c)
 {
-    char ch;
-    for (ch = 'a'; ch <= 'z'; ch++)
+    if (c >= 65 && c <= 90)
     {
-        if (c == ch)
-        {
-            return (0);
-        }
-        else
-        {
-            return (1);
-        }
+        return (1);
+    }
+    else if (c >= 97 && c <= 122)
+    {
+        return (0);
     }
     return (0);
 }
