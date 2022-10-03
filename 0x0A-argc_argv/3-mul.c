@@ -15,7 +15,13 @@ int main(int argc, char *argv[])
 	int i, result, input;
 
 	i = 1;
-	result = 1`;
+	result = 1;
+
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
 
 	while (i < argc)
 	{
@@ -23,7 +29,7 @@ int main(int argc, char *argv[])
 		result *= input;
 		i++;
 	}
-		printf("%d\n", result);
+	printf("%d\n", result);
 
 	return (0);
 }
