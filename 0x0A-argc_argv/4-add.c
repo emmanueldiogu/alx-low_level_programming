@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 {
 	int i, result, input;
 
-	i = 1;
 	result = 0;
 
 	if (argc <= 1)
@@ -24,12 +23,19 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	while (i < argc)
+	for (i = 1; i < argc; i++)
 	{
 		input = strtol(argv[i], NULL, 10);
+		if (input <= 0)
+		{
+			printf("Error\n");
+			return (1);
+			break;
+		}
+		
 		result += input;
-		i++;
 	}
+
 	printf("%d\n", result);
 
 	return (0);
