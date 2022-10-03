@@ -9,7 +9,7 @@
  * Description: program that prints its name, followed by a new line
  * Return: 0
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
