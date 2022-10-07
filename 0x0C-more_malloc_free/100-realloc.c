@@ -24,7 +24,6 @@ void _memcpy(void *dest, void *src, size_t n)
  * @new_size: size of new memory
  * Return: pointer to new memory
  */
-
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 
