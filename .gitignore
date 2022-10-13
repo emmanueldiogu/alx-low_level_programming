@@ -2,3 +2,4 @@
 .vscode
 *main.c
 !0x0D-preprocessor/2-main.c
+!0x0F-function_pointers/3-main.c
