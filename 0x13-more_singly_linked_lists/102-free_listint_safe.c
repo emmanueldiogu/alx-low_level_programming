@@ -1,45 +1,36 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - frees a linked list
- * @h: pointer to the head of the linked list
+ * free_listint_safe - frees a linked list and sets the head to NULL
+ * @h: pointer to a pointer to the head of the linked list
  *
- * Return: the size of the list that was freed
+ * Return: the number of nodes that were freed
  */
 size_t free_listint_safe(listint_t **h)
 {
-listint_t *turtle = *h, *hare = *h;
+listint_t *current, *tmp;
 size_t count = 0;
 
-while (turtle && hare && hare->next)
-{
-turtle = turtle->next;
-hare = hare->next->next;
-count++;
+if (h == NULL || *h == NULL)
+return (0);
 
-if (turtle == hare)
+current = *h;
+while (current)
 {
-while (*h != turtle)
-{
-listint_t *temp = *h;
-*h = (*h)->next;
-free(temp);
-count--;
-}
-*h = (*h)->next;
-free(turtle);
 count++;
-break;
+if (current < current->next)
+{
+tmp = current;
+current = current->next;
+free(tmp);
+}
+else
+{
+*h = NULL;
+exit(98);
 }
 }
 
-while (*h)
-{
-listint_t *temp = *h;
-*h = (*h)->next;
-free(temp);
-count++;
-}
-
+*h = NULL;
 return (count);
 }
