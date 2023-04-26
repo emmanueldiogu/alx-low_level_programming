@@ -12,6 +12,7 @@
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 dlistint_t *temp;
+unsigned int i;
 
 /* If the list is empty, return -1 */
 if (*head == NULL)
@@ -30,7 +31,7 @@ return (1);
 
 /* Traverse to the nth node */
 temp = *head;
-for (unsigned int i = 0; i < index && temp != NULL; i++)
+for (i = 0; i < index && temp != NULL; i++)
 temp = temp->next;
 
 /* If the nth node was not found, return -1 */
